@@ -27,7 +27,9 @@ SysGuard is a macOS-focused security monitoring tool that starts from simple fil
 
 Download the installer image from:
 
-- `release/SysGuard-7.4-macOS.dmg`
+- [Direct DMG download](https://github.com/yigitdayoglu/SysGuard/raw/main/release/SysGuard-7.4-macOS.dmg)
+- [Repository file view](https://github.com/yigitdayoglu/SysGuard/blob/main/release/SysGuard-7.4-macOS.dmg)
+- [Releases page](https://github.com/yigitdayoglu/SysGuard/releases)
 
 After downloading:
 
