@@ -1,0 +1,117 @@
+[
+    {
+        "type": "deleted_file",
+        "target": "/Users/yigitdayoglu/Downloads/Software-QA-and-Testing-for-101evler.pptx",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "Opera Helper (Renderer)",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "PlugInLibraryService",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "new_process",
+        "target": "Python",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "Python",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "mdworker_shared",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "terminated_process",
+        "target": "uncd",
+        "timestamp": "2026-04-08T00:43:35.199301"
+    },
+    {
+        "type": "modified_file",
+        "target": "/Users/yigitdayoglu/Downloads/.DS_Store",
+        "timestamp": "2026-04-08T00:45:53.992893"
+    },
+    {
+        "type": "deleted_file",
+        "target": "/Users/yigitdayoglu/Downloads/Install_ChatGPT_Atlas.dmg",
+        "timestamp": "2026-04-08T00:45:53.995454"
+    },
+    {
+        "type": "modified_file",
+        "target": "/Users/yigitdayoglu/Downloads/.DS_Store",
+        "timestamp": "2026-04-08T00:45:58.989899"
+    },
+    {
+        "type": "modified_file",
+        "target": "/Users/yigitdayoglu/Downloads/.DS_Store",
+        "timestamp": "2026-04-08T00:47:50.054434"
+    },
+    {
+        "type": "deleted_file",
+        "target": "/Users/yigitdayoglu/Downloads/WhatsApp Image 2026-03-23 at 11.16.09\u202fPM.jpeg",
+        "timestamp": "2026-04-08T00:47:50.056845"
+    },
+    {
+        "type": "modified_file",
+        "target": "/Users/yigitdayoglu/Downloads/.DS_Store",
+        "timestamp": "2026-04-08T00:47:54.996142"
+    }
+]

@@ -1,0 +1,99 @@
+{
+    "created_at": "2026-04-08T00:43:35.199704",
+    "snapshot_summary": {
+        "file_count": 69402,
+        "process_count": 633,
+        "startup_count": 21
+    },
+    "events": [
+        {
+            "type": "deleted_file",
+            "target": "/Users/yigitdayoglu/Downloads/Software-QA-and-Testing-for-101evler.pptx",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "Opera Helper (Renderer)",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "PlugInLibraryService",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "new_process",
+            "target": "Python",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "Python",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "mdworker_shared",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        },
+        {
+            "type": "terminated_process",
+            "target": "uncd",
+            "timestamp": "2026-04-08T00:43:35.199301"
+        }
+    ],
+    "risk": {
+        "score": 54,
+        "level": "HIGH"
+    }
+}

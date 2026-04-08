@@ -1,0 +1,16 @@
+.venv/
+.pyinstaller/
+__pycache__/
+*.pyc
+.idea/
+
+build/
+dist/
+release/
+SysGuard.app/
+SysGuard.spec
+
+storage/*
+!storage/.gitkeep
+
+*.dmg
