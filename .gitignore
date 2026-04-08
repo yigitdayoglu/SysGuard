@@ -12,5 +12,6 @@ SysGuard.spec
 
 storage/*
 !storage/.gitkeep
+SysGuard/storage/*
 
 *.dmg
