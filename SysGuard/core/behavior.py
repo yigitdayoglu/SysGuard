@@ -1,4 +1,5 @@
 import os
+import shlex
 from datetime import datetime
 
 from SysGuard.config import (
@@ -29,7 +30,7 @@ def parse_timestamp(value):
 def normalize_path(path):
     if not path:
         return None
-    return os.path.normcase(os.path.normpath(path))
+    return os.path.normcase(os.path.normpath(os.path.expandvars(str(path))))
 
 
 def normalize_name(value):
@@ -98,10 +99,33 @@ def behavior_event(event_type, target, event_time, details):
 def extract_startup_targets(event):
     targets = []
     for value in [event.get("program"), *(event.get("program_arguments") or [])]:
-        normalized_value = normalize_path(value)
-        if normalized_value:
-            targets.append(normalized_value)
+        for candidate in extract_command_path_candidates(value):
+            normalized_value = normalize_path(candidate)
+            if normalized_value:
+                targets.append(normalized_value)
     return targets
+
+
+def extract_command_path_candidates(value):
+    if not value:
+        return []
+
+    value = str(value).strip()
+    candidates = [value]
+
+    if value.startswith('"'):
+        closing_quote = value.find('"', 1)
+        if closing_quote > 1:
+            candidates.append(value[1:closing_quote])
+    else:
+        try:
+            parts = shlex.split(value, posix=False)
+        except ValueError:
+            parts = value.split()
+        if parts:
+            candidates.append(str(parts[0]).strip('"'))
+
+    return candidates
 
 
 def find_recent_event(history, event_type, predicate, event_time):
@@ -385,11 +409,11 @@ def detect_startup_behaviors(history, event, event_time):
     if event.get("keep_alive") is True:
         findings.append(
             behavior_event(
-                "launch_agent_keep_alive",
+                "startup_keep_alive",
                 event.get("target"),
                 event_time,
                 {
-                    "reason": "LaunchAgent keeps itself alive.",
+                    "reason": "Startup item keeps itself alive.",
                     "label": event.get("label"),
                 },
             )
@@ -398,11 +422,11 @@ def detect_startup_behaviors(history, event, event_time):
     if event.get("run_at_load") is True:
         findings.append(
             behavior_event(
-                "launch_agent_run_at_load",
+                "startup_run_at_load",
                 event.get("target"),
                 event_time,
                 {
-                    "reason": "LaunchAgent is configured to run at load.",
+                    "reason": "Startup item is configured to run automatically.",
                     "label": event.get("label"),
                 },
             )
@@ -412,11 +436,11 @@ def detect_startup_behaviors(history, event, event_time):
         if is_under_directory(startup_target, USER_HOME_DIR):
             findings.append(
                 behavior_event(
-                    "launch_agent_user_path",
+                    "startup_user_path",
                     startup_target,
                     event_time,
                     {
-                        "reason": "LaunchAgent executes a binary or script from the user directory.",
+                        "reason": "Startup item executes a binary or script from the user directory.",
                         "startup_item": event.get("target"),
                     },
                 )

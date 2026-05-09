@@ -4,11 +4,12 @@ from SysGuard.config import REVIEW_WORTHY_EXTENSIONS, SCRIPT_EXTENSIONS, SMALL_E
 
 
 TEXT_SAMPLE_BYTES = 8192
-MACHO_HEADERS = [
+BINARY_HEADERS = [
     b"\xcf\xfa\xed\xfe",
     b"\xfe\xed\xfa\xcf",
     b"\xca\xfe\xba\xbe",
     b"\xbe\xba\xfe\xca",
+    b"MZ",
 ]
 
 
@@ -48,7 +49,7 @@ def looks_like_binary(data):
     if not data:
         return False
 
-    if any(data.startswith(header) for header in MACHO_HEADERS):
+    if any(data.startswith(header) for header in BINARY_HEADERS):
         return True
 
     return b"\x00" in data

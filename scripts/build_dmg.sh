@@ -3,7 +3,7 @@ set -euo pipefail
 
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP_NAME="SysGuard"
-VERSION="7.4"
+VERSION="7.5"
 APP_PATH="$PROJECT_ROOT/${APP_NAME}.app"
 RELEASE_DIR="$PROJECT_ROOT/release"
 STAGE_DIR="$RELEASE_DIR/dmg-stage"
