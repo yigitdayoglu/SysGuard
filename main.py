@@ -4,7 +4,6 @@ from SysGuard.core.dashboard import build_dashboard, run_terminal_dashboard
 from SysGuard.core.reporter import ensure_storage, summarize_events
 from SysGuard.core.service import clear_events_history, clear_reports, perform_scan
 from SysGuard.monitors.file_monitor import start_file_monitor
-from SysGuard.ui.gui import run_gui
 from SysGuard.ui.web import run_web_panel
 
 
@@ -92,6 +91,8 @@ def main():
         return
 
     if args.command in {"gui", "app"}:
+        from SysGuard.ui.gui import run_gui
+
         run_gui()
         return
 

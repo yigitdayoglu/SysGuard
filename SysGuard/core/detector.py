@@ -81,6 +81,8 @@ def detect_changes(baseline, current):
                 "working_directory": startup_item.get("working_directory"),
                 "run_at_load": startup_item.get("run_at_load"),
                 "keep_alive": startup_item.get("keep_alive"),
+                "startup_source": startup_item.get("startup_source"),
+                "platform": startup_item.get("platform"),
             })
 
     for path in baseline_startup:
@@ -95,6 +97,8 @@ def detect_changes(baseline, current):
                 "working_directory": startup_item.get("working_directory"),
                 "run_at_load": startup_item.get("run_at_load"),
                 "keep_alive": startup_item.get("keep_alive"),
+                "startup_source": startup_item.get("startup_source"),
+                "platform": startup_item.get("platform"),
             })
 
     return events

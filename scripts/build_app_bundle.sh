@@ -31,10 +31,10 @@ rm -rf "$PROJECT_ROOT/build" "$PROJECT_ROOT/dist" "$PROJECT_ROOT/.pyinstaller" "
 
 /usr/libexec/PlistBuddy -c 'Set :CFBundleDisplayName SysGuard' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
   /usr/libexec/PlistBuddy -c 'Add :CFBundleDisplayName string SysGuard' "$DIST_APP/Contents/Info.plist"
-/usr/libexec/PlistBuddy -c 'Set :CFBundleShortVersionString 7.4' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
-  /usr/libexec/PlistBuddy -c 'Add :CFBundleShortVersionString string 7.4' "$DIST_APP/Contents/Info.plist"
-/usr/libexec/PlistBuddy -c 'Set :CFBundleVersion 7.4' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
-  /usr/libexec/PlistBuddy -c 'Add :CFBundleVersion string 7.4' "$DIST_APP/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c 'Set :CFBundleShortVersionString 7.5' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
+  /usr/libexec/PlistBuddy -c 'Add :CFBundleShortVersionString string 7.5' "$DIST_APP/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c 'Set :CFBundleVersion 7.5' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
+  /usr/libexec/PlistBuddy -c 'Add :CFBundleVersion string 7.5' "$DIST_APP/Contents/Info.plist"
 /usr/libexec/PlistBuddy -c 'Set :LSApplicationCategoryType public.app-category.utilities' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \
   /usr/libexec/PlistBuddy -c 'Add :LSApplicationCategoryType string public.app-category.utilities' "$DIST_APP/Contents/Info.plist"
 /usr/libexec/PlistBuddy -c 'Set :LSMinimumSystemVersion 13.0' "$DIST_APP/Contents/Info.plist" >/dev/null 2>&1 || \

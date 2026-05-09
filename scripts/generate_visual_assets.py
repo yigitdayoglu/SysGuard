@@ -8,6 +8,7 @@ ASSETS = ROOT / "assets"
 ICONSET = ASSETS / "SysGuard.iconset"
 ICON_PNG = ASSETS / "SysGuard.png"
 ICON_ICNS = ASSETS / "SysGuard.icns"
+ICON_ICO = ASSETS / "SysGuard.ico"
 DMG_BG = ASSETS / "dmg-background.png"
 
 
@@ -112,6 +113,7 @@ def save_icon_assets():
     base = create_base_icon(1024)
     base.save(ICON_PNG)
     base.save(ICON_ICNS)
+    base.save(ICON_ICO, sizes=[(16, 16), (32, 32), (48, 48), (256, 256)])
     icon_sizes = [16, 32, 128, 256, 512]
 
     for size in icon_sizes:
